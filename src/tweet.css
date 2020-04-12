@@ -1,0 +1,11 @@
+#Tweet {
+	width: 7em;
+	height: 3em;
+	float: right;
+	margin-top: 2.5em;
+	margin-right: 1em;
+	border-radius: 2em;
+	border: solid;
+	background-color: white;
+	border-color: #478fd5;
+}
