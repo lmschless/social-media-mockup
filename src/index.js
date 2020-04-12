@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './nav.css';
+// import './nav.css';
 import './search.css';
 import './header.css';
 import './tweet.css';
