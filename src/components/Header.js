@@ -6,12 +6,14 @@ import Tweet from './Tweet';
 function Header() {
 	return (
 		<React.Fragment>
-			<div id="wrapper">
-				<Nav />
-				<Tweet />
+			<header>
+				<div id="wrapper">
+					<Nav />
+					<Tweet />
 
-				<Search />
-			</div>
+					<Search />
+				</div>
+			</header>
 		</React.Fragment>
 	);
 }
