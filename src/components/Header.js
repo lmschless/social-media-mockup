@@ -5,8 +5,10 @@ import Search from './Search';
 function Header() {
 	return (
 		<React.Fragment>
-			<Nav />
-			<Search />
+			<div id="wrapper">
+				<Nav />
+				<Search />
+			</div>
 		</React.Fragment>
 	);
 }
