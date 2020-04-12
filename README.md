@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Component Map
 
-![GitHub Logo](/public/react-social-component-map.png)
+!(/public/react-social-component-map.png)
 
 ## Available Scripts
 
