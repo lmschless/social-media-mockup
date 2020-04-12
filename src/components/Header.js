@@ -4,10 +4,14 @@ import Search from './Search';
 import Tweet from './Tweet';
 
 function Header() {
+	const headerStyles = {
+		height: '15vh',
+		borderBottom: '.15em solid gray'
+	};
 	return (
 		<React.Fragment>
 			<header>
-				<div id="wrapper">
+				<div style={headerStyles}>
 					<Nav />
 					<Tweet />
 
