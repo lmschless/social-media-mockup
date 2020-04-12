@@ -1,13 +1,8 @@
 import React from 'react';
+import Nav from './Nav';
 
 function Header() {
-	return (
-		<nav>
-			<li>Home</li>
-			<li>Notifications</li>
-			<li>Messages</li>
-		</nav>
-	);
+	return <Nav />;
 }
 
 export default Header;
