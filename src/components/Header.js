@@ -27,7 +27,7 @@
 // export default Header;
 
 import React, { Component } from 'react';
-
+import Nav from './Nav';
 export default class Header extends Component {
 	state = {
 		count: 0
@@ -39,7 +39,10 @@ export default class Header extends Component {
 		};
 		return (
 			<React.Fragment>
-				<header style={headerStyles}>{this.tweet()}</header>
+				<header style={headerStyles}>
+					<Nav />
+					{this.tweet()}
+				</header>
 			</React.Fragment>
 		);
 	}
@@ -58,17 +61,18 @@ export default class Header extends Component {
 		};
 		return (
 			<React.Fragment>
-				<p>{this.state.count}</p>
 				<button style={tweetStyles} onClick={() => this.handleClick()}>
 					Tweet
 				</button>
+				<p>{this.state.count}</p>
 			</React.Fragment>
 		);
 	}
 
 	handleClick() {
+		const test = this.state.count;
 		return this.setState({
-			count: (this.state.count += 1)
+			count: test + 1
 		});
 	}
 }

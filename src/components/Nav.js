@@ -2,8 +2,8 @@ import React from 'react';
 
 function Nav() {
 	const navStyles = {
-		float: 'left',
-		marginTop: '3vh'
+		// float: 'left',
+		// marginTop: '3vh'
 	};
 	const buttonStyles = {
 		height: '5em',
