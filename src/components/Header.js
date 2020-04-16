@@ -64,7 +64,10 @@ export default class Header extends Component {
 				<button style={tweetStyles} onClick={() => this.handleClick()}>
 					Tweet
 				</button>
-				<p>{this.state.count}</p>
+				<button style={tweetStyles} onClick={() => this.resetCount()}>
+					Reset Count
+				</button>
+				<h1 style={{ float: 'right', marginRight: '10px' }}>{this.state.count}</h1>
 			</React.Fragment>
 		);
 	}
@@ -73,6 +76,12 @@ export default class Header extends Component {
 		const test = this.state.count;
 		return this.setState({
 			count: test + 1
+		});
+	}
+
+	resetCount() {
+		return this.setState({
+			count: 0
 		});
 	}
 }
