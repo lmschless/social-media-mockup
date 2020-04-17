@@ -40,8 +40,10 @@ export default class Header extends Component {
 		return (
 			<React.Fragment>
 				<header style={headerStyles}>
-					<Nav />
-					{this.tweet()}
+					<div>
+						<Nav />
+						{this.tweet()}
+					</div>
 				</header>
 			</React.Fragment>
 		);

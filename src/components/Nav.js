@@ -16,11 +16,9 @@ function Nav() {
 
 	return (
 		<div style={navStyles}>
-			<nav>
-				<button style={buttonStyles}>Home</button>
-				<button style={buttonStyles}>Notifications</button>
-				<button style={buttonStyles}>Messages</button>
-			</nav>
+			<button style={buttonStyles}>Home</button>
+			<button style={buttonStyles}>Notifications</button>
+			<button style={buttonStyles}>Messages</button>
 		</div>
 	);
 }
