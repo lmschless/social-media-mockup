@@ -1,4 +1,5 @@
 import React from 'react';
+import Section from './Section.js';
 
 function Body() {
 	const bodyStyles = {
@@ -15,12 +16,7 @@ function Body() {
 	return (
 		<div style={bodyStyles}>
 			<div style={sectionStyles}>
-				React was originally developed by Facebook to manage the dynamic, complex
-				needs of a large social media app. After observing Facebook's success, many
-				other social media applications have also begun relying on React. Create a
-				site that looks like the mock-up depicted below using only React components.
-				Take care in determining which portions warrant their own components:
-				social-media-wireframe
+				<Section />
 			</div>
 			<div style={sectionStyles}>
 				React was originally developed by Facebook to manage the dynamic, complex
