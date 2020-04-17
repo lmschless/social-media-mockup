@@ -52,7 +52,7 @@ export default class Header extends Component {
 			width: '7em',
 			height: '3em',
 			float: 'right',
-			marginTop: '2.5em',
+
 			marginRight: '1em',
 			borderRadius: '2em',
 			border: 'solid',

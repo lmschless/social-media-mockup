@@ -2,16 +2,26 @@ import React from 'react';
 import Section from './Section.js';
 
 function Body() {
+	// const bodyStyles = {
+	// 	gridTemplateColumns: 'repeat(auto-fill, minmax(33vw, 3fr))',
+	// 	display: 'grid',
+	// 	gridTemplateRows: 'minmax(auto, 3fr',
+	// 	gridColumnGap: '1em',
+	// 	height: '100%'
+	// };
 	const bodyStyles = {
-		gridTemplateColumns: 'repeat(auto-fill, minmax(33vw, 3fr))',
+		gridTemplateColumns: 'repeat(3,1fr)',
 		display: 'grid',
-		gridTemplateRows: 'minmax(auto, 3fr',
+		gridTemplateRows: '1fr',
+		gridColumnGap: '1em',
 		height: '100%'
 	};
 	const sectionStyles = {
-		border: '.15em solid gray',
-		margin: '.75em',
-		padding: '.5em'
+		// border: '1px solid gray',
+		// borderRadius: '38px 38px 38px 38px'
+		// border: '.15em solid gray',
+		// margin: '.75em',
+		// padding: '.5em'
 	};
 	return (
 		<div style={bodyStyles}>
