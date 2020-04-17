@@ -2,8 +2,9 @@ import React from 'react';
 
 function Nav() {
 	const navStyles = {
+		alignItems: 'center'
 		// float: 'left',
-		// marginTop: '3vh'
+		// paddingTop: '1em'
 	};
 	const buttonStyles = {
 		height: '5em',
@@ -14,11 +15,13 @@ function Nav() {
 	};
 
 	return (
-		<nav style={navStyles}>
-			<button style={buttonStyles}>Home</button>
-			<button style={buttonStyles}>Notifications</button>
-			<button style={buttonStyles}>Messages</button>
-		</nav>
+		<div style={navStyles}>
+			<nav>
+				<button style={buttonStyles}>Home</button>
+				<button style={buttonStyles}>Notifications</button>
+				<button style={buttonStyles}>Messages</button>
+			</nav>
+		</div>
 	);
 }
 export default Nav;
