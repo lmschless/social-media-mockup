@@ -1,5 +1,6 @@
 import React from 'react';
-import Section from './Section.js';
+import LeftSection from './LeftSection.js';
+import MiddleSection from './MiddleSection.js';
 
 function Body() {
 	// const bodyStyles = {
@@ -23,14 +24,13 @@ function Body() {
 	return (
 		<div style={bodyStyles}>
 			<div style={sectionStyles}>
-				<Section />
+				<LeftSection />
 			</div>
 			<div style={sectionStyles}>
-				<Section />
+				<MiddleSection />
 			</div>
-			<div style={sectionStyles}>
-				<Section />
-			</div>
+
+			<div style={sectionStyles} />
 		</div>
 	);
 }
