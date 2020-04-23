@@ -1,8 +1,9 @@
 import React from 'react';
+import Search from './Search';
 
 function Nav() {
 	const navStyles = {
-		alignItems: 'center'
+		// alignItems: 'center'
 		// float: 'left',
 		// paddingTop: '1em'
 	};
@@ -15,11 +16,12 @@ function Nav() {
 	};
 
 	return (
-		<div style={navStyles}>
+		<React.Fragment>
+			<Search />
 			<button style={buttonStyles}>Home</button>
 			<button style={buttonStyles}>Notifications</button>
 			<button style={buttonStyles}>Messages</button>
-		</div>
+		</React.Fragment>
 	);
 }
 export default Nav;

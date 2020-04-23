@@ -1,6 +1,5 @@
 // import React from 'react';
 // import Nav from './Nav';
-// import Search from './Search';
 // import Tweet from './Tweet';
 
 // // Original function component, to be replaced with
@@ -28,6 +27,8 @@
 
 import React, { Component } from 'react';
 import Nav from './Nav';
+import Search from './Search';
+
 export default class Header extends Component {
 	state = {
 		count: 0
@@ -35,15 +36,17 @@ export default class Header extends Component {
 	render() {
 		const headerStyles = {
 			height: '15vh',
-			borderBottom: '.15em solid gray'
+			paddingBottom: '8em',
+			borderBottom: '.15em solid gray',
+			textAlign: 'center'
 		};
 		return (
 			<React.Fragment>
 				<header style={headerStyles}>
-					<div>
-						<Nav />
-						{this.tweet()}
-					</div>
+					{/* <div> */}
+					<Nav />
+					{this.tweet()}
+					{/* </div> */}
 				</header>
 			</React.Fragment>
 		);
@@ -67,9 +70,8 @@ export default class Header extends Component {
 					Tweet
 				</button>
 				<button style={tweetStyles} onClick={() => this.resetCount()}>
-					Reset Count
+					Reset Count: {this.state.count}
 				</button>
-				<h1 style={{ float: 'right', marginRight: '10px' }}>{this.state.count}</h1>
 			</React.Fragment>
 		);
 	}
