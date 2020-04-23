@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Button, CardTitle, CardText, ButtonGroup } from 'reactstrap';
-
+import { Card, CardTitle, CardText } from 'reactstrap';
+import ActionButtons from './ActionButtons';
 const Example = (props) => {
 	return (
 		<React.Fragment>
@@ -11,15 +11,7 @@ const Example = (props) => {
 					needs of a large social media app. After observing Facebook's success, many
 					other social media applications.
 				</CardText>
-				<center>
-					<ButtonGroup>
-						<Button color="success">Follow</Button>
-
-						<Button color="danger">Like!</Button>
-
-						<Button color="info">Share</Button>
-					</ButtonGroup>
-				</center>
+				<ActionButtons />
 			</Card>
 		</React.Fragment>
 	);
