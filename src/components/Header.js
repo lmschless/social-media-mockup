@@ -27,7 +27,6 @@
 
 import React, { Component } from 'react';
 import Nav from './Nav';
-import Search from './Search';
 
 export default class Header extends Component {
 	state = {

@@ -2,11 +2,6 @@ import React from 'react';
 import Search from './Search';
 
 function Nav() {
-	const navStyles = {
-		// alignItems: 'center'
-		// float: 'left',
-		// paddingTop: '1em'
-	};
 	const buttonStyles = {
 		height: '5em',
 		width: '9em',
