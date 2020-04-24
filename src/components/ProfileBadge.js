@@ -4,7 +4,7 @@ import ActionButtons from './ActionButtons';
 const Example = (props) => {
 	return (
 		<React.Fragment>
-			<Card body inverse color="primary">
+			<Card body inverse color="secondary">
 				<CardTitle>User Profile Card</CardTitle>
 				<CardText>
 					React was originally developed by Facebook to manage the dynamic, complex

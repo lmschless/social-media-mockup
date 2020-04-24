@@ -37,42 +37,66 @@ import {
 	DropdownItem,
 	NavbarText
 } from 'reactstrap';
+import { white } from 'color-name';
 
 const NavBar = (props) => {
 	const [ isOpen, setIsOpen ] = useState(false);
 
 	const toggle = () => setIsOpen(!isOpen);
+	const navStyles = {
+		backgroundColor: '#2f2fa2',
+		height: '10vh',
+		paddingBottom: '5em',
+		paddingTop: '2.5em',
+		paddingLeft: '10em',
+		paddingRight: '10em'
+	};
+	const textStyles = {
+		color: 'white',
+		backgroundColor: '#2f2fa2'
+	};
 
+	const highlightStyles = {
+		color: 'white',
+		backgroundColor: '#f6472',
+		paddingRight: '2em'
+	};
 	return (
 		<div>
-			<Navbar color="light" light expand="md">
-				<NavbarBrand href="/">reactstrap</NavbarBrand>
+			<Navbar style={navStyles} light expand="md">
+				<NavbarBrand style={textStyles} href="/">
+					Social Media Mockup
+				</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="mr-auto" navbar>
 						<NavItem>
-							<NavLink href="/components/">Components</NavLink>
+							<NavLink style={textStyles} href="/components/">
+								Components
+							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="https://github.com/reactstrap/reactstrap">
+							<NavLink
+								style={textStyles}
+								href="https://github.com/reactstrap/reactstrap"
+							>
 								GitHub
 							</NavLink>
 						</NavItem>
-						<UncontrolledDropdown nav inNavbar>
-							<DropdownToggle nav caret>
+						<UncontrolledDropdown style={textStyles} nav inNavbar>
+							<DropdownToggle style={textStyles} nav caret>
 								Options
 							</DropdownToggle>
-							<DropdownMenu right>
+							<DropdownMenu right style={textStyles}>
 								<DropdownItem>Option 1</DropdownItem>
-								<DropdownItem>Option 2</DropdownItem>
+								<DropdownItem style={textStyles}>Option 2</DropdownItem>
 								<DropdownItem divider />
-								<DropdownItem>Reset</DropdownItem>
+								<DropdownItem style={textStyles}>Reset</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>
 					</Nav>
-					<NavbarText>Simple Text</NavbarText>
+					<h1 style={highlightStyles}>Login</h1>
 				</Collapse>
-				<Tweet />
 			</Navbar>
 		</div>
 	);

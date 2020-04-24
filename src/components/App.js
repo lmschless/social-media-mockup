@@ -11,7 +11,8 @@ function App() {
 		gridTemplateColumns: '.25fr .75fr 1fr .75fr .25fr',
 		gridTemplateRows: '1fr',
 		gridColumnGap: '2px',
-		gridRowGap: '3px'
+		gridRowGap: '3px',
+		backgroundColor: '#2f2fa2'
 	};
 
 	return (
