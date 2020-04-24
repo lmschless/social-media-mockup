@@ -38,7 +38,6 @@ import {
 	NavbarText,
 	Button
 } from 'reactstrap';
-import { white } from 'color-name';
 
 const NavBar = (props) => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -60,11 +59,10 @@ const NavBar = (props) => {
 	const highlightStyles = {
 		color: '#F64C72',
 		borderColor: '#F64C72',
-		// paddingRight: '2em',
-		// paddingTop: '1.5em',
 		fontWeight: 'bold',
-		height: '3.5em',
-		width: '7em'
+		// height: '3.5em',
+		// width: '7em',
+		fontSize: '1.5em'
 	};
 	return (
 		<div>
