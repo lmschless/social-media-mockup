@@ -9,7 +9,7 @@ function App() {
 	const bodyStyles = {
 		display: 'grid',
 		gridTemplateColumns: 'repeat(3, 1fr)',
-		gridTemplateRows: 'repeat(2, 1fr)',
+		gridTemplateRows: 'repeat(2, .5fr)',
 		gridColumnGap: '3px',
 		gridRowGap: '3px'
 	};

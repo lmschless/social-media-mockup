@@ -11,26 +11,16 @@ export default function Section() {
 		alignItems: 'center'
 	};
 	const bottomCard = {
-		gridArea: '1/1/2/2',
-		border: '.5px solid gray',
-		borderRadius: '2em 2em 2em 2em',
-		padding: '1.5em'
+		gridArea: '2 / 3 / 3 / 4'
 		// border: '.15em solid gray'
 	};
 	const topCard = {
-		gridArea: '2/1/3/2',
-		border: '.5px solid gray',
-		borderRadius: '2em 2em 2em 2em',
-		padding: '1.5em'
+		gridArea: '1 / 3 / 2 / 4'
 	};
 	return (
 		<React.Fragment>
 			<div style={topCard}>
-				React was originally developed by Facebook to manage the dynamic, complex
-				needs of a large social media app. After observing Facebook's success, many
-				other social media applications have also begun relying on React. Create a
-				site that looks like the mock-up depicted below using only React components.
-				Take care in determining which portions warrant their own components:
+				<ProfileBadge />
 			</div>
 			<div style={bottomCard}>
 				<ProfileBadge />
