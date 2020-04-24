@@ -21,8 +21,8 @@
 // }
 // export default Nav;
 
-import React, { useState } from 'react';
-import Tweet from './Tweet';
+import { React, Component, useState } from 'react';
+import LoginForm from './LoginForm';
 import {
 	Collapse,
 	Navbar,
@@ -39,70 +39,85 @@ import {
 	Button
 } from 'reactstrap';
 
-const NavBar = (props) => {
-	const [ isOpen, setIsOpen ] = useState(false);
+export default class NavBar extends Component {
+	constructor(props) {
+		super(props);
 
-	const toggle = () => setIsOpen(!isOpen);
-	const navStyles = {
-		backgroundColor: '#2f2fa2',
-		height: '7vh',
-		paddingBottom: '5em',
-		paddingTop: '2.5em',
-		paddingLeft: '10em',
-		paddingRight: '10em'
+		this.state = {
+			showLogin: false
+		};
+	}
+
+	loginClick = () => {
+		this.setState({
+			showLogin: true
+		});
 	};
-	const textStyles = {
-		color: 'white',
-		backgroundColor: '#2f2fa2'
-	};
+	render() {
+		const [ isOpen, setIsOpen ] = useState(false);
 
-	const highlightStyles = {
-		color: '#F64C72',
-		borderColor: '#F64C72',
-		fontWeight: 'bold',
-		// height: '3.5em',
-		// width: '7em',
-		fontSize: '1.5em'
-	};
-	return (
-		<div>
-			<Navbar style={navStyles} light expand="md">
-				<NavbarBrand style={textStyles} href="/">
-					Social Media Mockup
-				</NavbarBrand>
-				<NavbarToggler onClick={toggle} />
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className="mr-auto" navbar>
-						<NavItem>
-							<NavLink style={textStyles} href="/components/">
-								Explore
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink style={textStyles} href="/components/">
-								Notifications
-							</NavLink>
-						</NavItem>
-						<UncontrolledDropdown style={textStyles} nav inNavbar>
-							<DropdownToggle style={textStyles} nav caret>
-								Settings
-							</DropdownToggle>
-							<DropdownMenu right style={textStyles}>
-								<DropdownItem style={textStyles}>Privacy</DropdownItem>
-								<DropdownItem style={textStyles}>Reset Password</DropdownItem>
-								<DropdownItem divider />
-								<DropdownItem style={textStyles}>Reset</DropdownItem>
-							</DropdownMenu>
-						</UncontrolledDropdown>
-					</Nav>
+		const toggle = () => setIsOpen(!isOpen);
 
-					<Button style={highlightStyles} outline>
-						Login
-					</Button>
-				</Collapse>
-			</Navbar>
-		</div>
-	);
-};
+		const navStyles = {
+			backgroundColor: '#2f2fa2',
+			height: '7vh',
+			paddingBottom: '5em',
+			paddingTop: '2.5em',
+			paddingLeft: '10em',
+			paddingRight: '10em'
+		};
+		const textStyles = {
+			color: 'white',
+			backgroundColor: '#2f2fa2'
+		};
 
-export default NavBar;
+		const highlightStyles = {
+			color: '#F64C72',
+			borderColor: '#F64C72',
+			fontWeight: 'bold',
+			// height: '3.5em',
+			// width: '7em',
+			fontSize: '1.5em'
+		};
+
+		return (
+			<div>
+				<Navbar style={navStyles} light expand="md">
+					<NavbarBrand style={textStyles} href="/">
+						Social Media Mockup
+					</NavbarBrand>
+					<NavbarToggler onClick={toggle} />
+					<Collapse isOpen={isOpen} navbar>
+						<Nav className="mr-auto" navbar>
+							<NavItem>
+								<NavLink style={textStyles} href="/components/">
+									Explore
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink style={textStyles} href="/components/">
+									Notifications
+								</NavLink>
+							</NavItem>
+							<UncontrolledDropdown style={textStyles} nav inNavbar>
+								<DropdownToggle style={textStyles} nav caret>
+									Settings
+								</DropdownToggle>
+								<DropdownMenu right style={textStyles}>
+									<DropdownItem style={textStyles}>Privacy</DropdownItem>
+									<DropdownItem style={textStyles}>Reset Password</DropdownItem>
+									<DropdownItem divider />
+									<DropdownItem style={textStyles}>Reset</DropdownItem>
+								</DropdownMenu>
+							</UncontrolledDropdown>
+						</Nav>
+
+						<Button onClick={this.loginClick()} style={highlightStyles} outline>
+							Login
+						</Button>
+					</Collapse>
+				</Navbar>
+			</div>
+		);
+	}
+}
