@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button, ButtonGroup } from 'reactstrap';
 
 export default class ActionButtons extends Component {
 	constructor(props) {

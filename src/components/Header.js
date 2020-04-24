@@ -34,7 +34,7 @@ export default class Header extends Component {
 	};
 	render() {
 		const headerStyles = {
-			height: '7em',
+			height: '15vh',
 			paddingBottom: '8em',
 			borderBottom: '.15em solid gray',
 			textAlign: 'center'
@@ -42,8 +42,10 @@ export default class Header extends Component {
 		return (
 			<React.Fragment>
 				<header style={headerStyles}>
+					{/* <div> */}
 					<Nav />
 					{this.tweet()}
+					{/* </div> */}
 				</header>
 			</React.Fragment>
 		);
