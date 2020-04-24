@@ -3,16 +3,16 @@ import ProfileBadge from './ProfileBadge';
 
 export default function Section() {
 	const topCard = {
-		gridArea: '1/2/2/3',
-		padding: '.5em'
+		gridArea: ' 1 / 3 / 2 / 4',
+		padding: '.5em',
+		height: '1000px'
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em',
 		// border: '.15em solid gray'
 	};
 	const bottomCard = {
-		gridArea: '2/2/3/3',
-		padding: '.5em'
-
+		// gridArea: '1/3/2/4',
+		// padding: '.5em'
 		// border: '.5px solid gray',
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em'
@@ -22,9 +22,9 @@ export default function Section() {
 			<div style={topCard}>
 				<ProfileBadge />
 			</div>
-			<div style={bottomCard}>
+			{/* <div style={bottomCard}>
 				<ProfileBadge />
-			</div>
+			</div> */}
 		</React.Fragment>
 	);
 }

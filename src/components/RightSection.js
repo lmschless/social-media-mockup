@@ -11,16 +11,15 @@ export default function Section() {
 		// alignItems: 'center'
 	};
 	const topCard = {
-		gridArea: '1/1/2/2',
+		gridArea: '1 / 4 / 2 / 5',
 		padding: '.5em'
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em',
 		// border: '.15em solid gray'
 	};
 	const bottomCard = {
-		gridArea: '2/1/3/2',
-		padding: '.5em'
-
+		// gridArea: ' 1 / 4 / 2 / 5',
+		// padding: '.5em'
 		// border: '.5px solid gray',
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em'
@@ -30,9 +29,9 @@ export default function Section() {
 			<div style={topCard}>
 				<ProfileBadge />
 			</div>
-			<div style={bottomCard}>
+			{/* <div style={bottomCard}>
 				<ProfileBadge />
-			</div>
+			</div> */}
 		</React.Fragment>
 	);
 }

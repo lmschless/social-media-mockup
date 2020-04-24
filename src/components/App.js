@@ -6,25 +6,21 @@ import RightSection from './RightSection.js'; // import '../nav.css';
 // import '/components/App.css';
 
 function App() {
-	const bodyStyles = {
+	const gridContainer = {
 		display: 'grid',
-		gridTemplateColumns: 'repeat(3, 1fr)',
-		gridTemplateRows: 'repeat(2, .5fr)',
-		gridColumnGap: '3px',
+		gridTemplateColumns: '.25fr .75fr 1fr .75fr .25fr',
+		gridTemplateRows: '1fr',
+		gridColumnGap: '2px',
 		gridRowGap: '3px'
 	};
 
-	const sectionStyles = {
-		// margin: '.75em',
-		// padding: '.5em'
-	};
 	return (
 		<React.Fragment>
 			<Header />
-			<div style={bodyStyles}>
-				<LeftSection style={sectionStyles} />
-				<MiddleSection style={sectionStyles} />
-				<RightSection style={sectionStyles} />
+			<div style={gridContainer}>
+				<LeftSection />
+				<MiddleSection />
+				<RightSection />
 			</div>
 		</React.Fragment>
 	);
