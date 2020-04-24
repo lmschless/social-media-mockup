@@ -34,7 +34,7 @@ export default class Header extends Component {
 	};
 	render() {
 		const headerStyles = {
-			height: '15vh',
+			height: '7em',
 			paddingBottom: '8em',
 			borderBottom: '.15em solid gray',
 			textAlign: 'center'
