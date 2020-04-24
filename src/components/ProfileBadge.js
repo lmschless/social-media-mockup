@@ -2,9 +2,13 @@ import React from 'react';
 import { Card, CardTitle, CardText } from 'reactstrap';
 import ActionButtons from './ActionButtons';
 const Example = (props) => {
+	const profileStyles = {
+		backgroundColor: '#FFFFFF',
+		borderRadius: '1.5em'
+	};
 	return (
 		<React.Fragment>
-			<Card body inverse color="secondary">
+			<Card style={profileStyles} body>
 				<CardTitle>User Profile Card</CardTitle>
 				<CardText>
 					React was originally developed by Facebook to manage the dynamic, complex

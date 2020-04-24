@@ -35,7 +35,8 @@ import {
 	DropdownToggle,
 	DropdownMenu,
 	DropdownItem,
-	NavbarText
+	NavbarText,
+	Button
 } from 'reactstrap';
 import { white } from 'color-name';
 
@@ -95,7 +96,9 @@ const NavBar = (props) => {
 							</DropdownMenu>
 						</UncontrolledDropdown>
 					</Nav>
-					<h1 style={highlightStyles}>Login</h1>
+					<h1 style={highlightStyles}>
+						<Button outline>Login</Button>
+					</h1>
 				</Collapse>
 			</Navbar>
 		</div>
