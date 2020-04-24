@@ -45,7 +45,7 @@ const NavBar = (props) => {
 	const toggle = () => setIsOpen(!isOpen);
 	const navStyles = {
 		backgroundColor: '#2f2fa2',
-		height: '10vh',
+		height: '7vh',
 		paddingBottom: '5em',
 		paddingTop: '2.5em',
 		paddingLeft: '10em',
@@ -75,24 +75,21 @@ const NavBar = (props) => {
 					<Nav className="mr-auto" navbar>
 						<NavItem>
 							<NavLink style={textStyles} href="/components/">
-								Components
+								Explore
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink
-								style={textStyles}
-								href="https://github.com/reactstrap/reactstrap"
-							>
-								GitHub
+							<NavLink style={textStyles} href="/components/">
+								Notifications
 							</NavLink>
 						</NavItem>
 						<UncontrolledDropdown style={textStyles} nav inNavbar>
 							<DropdownToggle style={textStyles} nav caret>
-								Options
+								Settings
 							</DropdownToggle>
 							<DropdownMenu right style={textStyles}>
-								<DropdownItem style={textStyles}>Option 1</DropdownItem>
-								<DropdownItem style={textStyles}>Option 2</DropdownItem>
+								<DropdownItem style={textStyles}>Privacy</DropdownItem>
+								<DropdownItem style={textStyles}>Reset Password</DropdownItem>
 								<DropdownItem divider />
 								<DropdownItem style={textStyles}>Reset</DropdownItem>
 							</DropdownMenu>

@@ -13,7 +13,8 @@ function App() {
 		gridColumnGap: '2px',
 		gridRowGap: '3px',
 		height: '100vh',
-		backgroundColor: '#2f2fa2'
+		backgroundColor: '#2f2fa2',
+		fontFamily: "'Baloo Bhaina 2' cursive"
 	};
 
 	return (

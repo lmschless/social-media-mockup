@@ -19,9 +19,6 @@ export default class MiddleSection extends Component {
 					<ProfileBadge />
 					<ProfileBadge />
 				</div>
-				{/* <div style={bottomCard}>
-				<ProfileBadge />
-			</div> */}
 			</React.Fragment>
 		);
 	}
