@@ -8,8 +8,7 @@ export default function Section() {
 		gridTemplateRows: '1fr 1fr',
 		gridColumnGap: '12px',
 		gridRowGap: '15px',
-		alignItems: 'center',
-		justifyContent: 'center'
+		alignItems: 'center'
 	};
 	const bottomCard = {
 		gridArea: '1/1/2/2',
@@ -25,7 +24,7 @@ export default function Section() {
 		padding: '1.5em'
 	};
 	return (
-		<div style={sectionStyles}>
+		<React.Fragment>
 			<div style={topCard}>
 				React was originally developed by Facebook to manage the dynamic, complex
 				needs of a large social media app. After observing Facebook's success, many
@@ -36,6 +35,6 @@ export default function Section() {
 			<div style={bottomCard}>
 				<ProfileBadge />
 			</div>
-		</div>
+		</React.Fragment>
 	);
 }

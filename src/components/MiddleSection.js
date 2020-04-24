@@ -24,7 +24,7 @@ export default function Section() {
 		padding: '1.5em'
 	};
 	return (
-		<div style={sectionStyles}>
+		<React.Fragment>
 			<div style={topCard}>
 				React was originally developed by Facebook to manage the dynamic, complex
 				needs of a large social media app. After observing Facebook's success, many
@@ -45,6 +45,6 @@ export default function Section() {
 				using only React components. Take care in determining which portions warrant
 				their own components: social-media-wireframe
 			</div>
-		</div>
+		</React.Fragment>
 	);
 }
