@@ -3,12 +3,12 @@ import ProfileBadge from './ProfileBadge';
 
 export default function Section() {
 	const sectionStyles = {
-		display: 'grid',
-		gridTemplateColumns: '1fr',
-		gridTemplateRows: '1fr 1fr',
-		gridColumnGap: '12px',
-		gridRowGap: '15px',
-		alignItems: 'center'
+		// display: 'grid',
+		// gridTemplateColumns: '1fr',
+		// gridTemplateRows: '1fr 1fr',
+		// gridColumnGap: '12px',
+		// gridRowGap: '15px',
+		// alignItems: 'center'
 	};
 	const bottomCard = {
 		gridArea: '2 / 3 / 3 / 4'

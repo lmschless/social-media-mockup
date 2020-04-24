@@ -1,17 +1,19 @@
 import React from 'react';
-import { Card, CardTitle, CardText } from 'reactstrap';
+import { Button, Card } from 'react-bootstrap';
 import ActionButtons from './ActionButtons';
 const Example = (props) => {
 	return (
 		<React.Fragment>
-			<Card body inverse color="primary">
-				<CardTitle>User Profile Card</CardTitle>
-				<CardText>
-					React was originally developed by Facebook to manage the dynamic, complex
-					needs of a large social media app. After observing Facebook's success, many
-					other social media applications.
-				</CardText>
-				<ActionButtons />
+			<Card style={{ width: '18rem' }}>
+				<Card.Img variant="top" src="holder.js/100px180" />
+				<Card.Body>
+					<Card.Title>User Profile</Card.Title>
+					<Card.Text>
+						Some quick example text to build on the card title and make up the bulk
+						of the card's content.
+					</Card.Text>
+					<ActionButtons />
+				</Card.Body>
 			</Card>
 		</React.Fragment>
 	);
