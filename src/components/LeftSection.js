@@ -12,14 +12,14 @@ export default function Section() {
 		// justifyContent: 'center'
 	};
 	const topCard = {
-		// gridArea: '1/1/2/2',
+		gridArea: '1/1/2/2'
 		// border: '.5px solid gray',
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em',
 		// border: '.15em solid gray'
 	};
 	const bottomCard = {
-		// gridArea: '2/1/3/2',
+		gridArea: '2/1/3/2'
 		// border: '.5px solid gray',
 		// borderRadius: '2em 2em 2em 2em',
 		// padding: '1.5em'
