@@ -12,8 +12,8 @@ function App() {
 		gridTemplateRows: '1fr',
 		gridColumnGap: '2px',
 		gridRowGap: '3px',
-		backgroundColor: '#2f2fa2',
-		height: '100vh'
+		height: '100vh',
+		backgroundColor: '#2f2fa2'
 	};
 
 	return (

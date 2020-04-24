@@ -4,6 +4,7 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: '#2f2fa2';
 }
 
 code {
@@ -12,4 +13,10 @@ code {
 
 .testStyles {
 	opacity: .2;
+}
+
+html,
+body {
+	background-color: #2f2fa2;
+	height: 100%;
 }

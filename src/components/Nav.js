@@ -58,9 +58,13 @@ const NavBar = (props) => {
 	};
 
 	const highlightStyles = {
-		color: 'white',
-		backgroundColor: '#f6472',
-		paddingRight: '2em'
+		color: '#F64C72',
+		borderColor: '#F64C72',
+		// paddingRight: '2em',
+		// paddingTop: '1.5em',
+		fontWeight: 'bold',
+		height: '3.5em',
+		width: '7em'
 	};
 	return (
 		<div>
@@ -89,16 +93,17 @@ const NavBar = (props) => {
 								Options
 							</DropdownToggle>
 							<DropdownMenu right style={textStyles}>
-								<DropdownItem>Option 1</DropdownItem>
+								<DropdownItem style={textStyles}>Option 1</DropdownItem>
 								<DropdownItem style={textStyles}>Option 2</DropdownItem>
 								<DropdownItem divider />
 								<DropdownItem style={textStyles}>Reset</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>
 					</Nav>
-					<h1 style={highlightStyles}>
-						<Button outline>Login</Button>
-					</h1>
+
+					<Button style={highlightStyles} outline>
+						Login
+					</Button>
 				</Collapse>
 			</Navbar>
 		</div>
